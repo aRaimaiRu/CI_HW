@@ -65,7 +65,7 @@ def upload_file():
         if file.filename == '':
             print('No selected file')
             return redirect(request.url)
-        if file and file.filename.lower().endswith(('.png', '.jpg', '.jpeg', '.tiff', '.bmp', '.gif')):
+        if file and file.filename.lower().endswith(('.jpg', '.jpeg')):
             filename = file.filename
             
             file = request.files['file']
